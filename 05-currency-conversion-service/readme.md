@@ -1,6 +1,6 @@
 # Currency Conversion Micro Service
 
-Run com.in28minutes.microservices.currencyconversionservice.CurrencyConversionServiceApplication as a Java Application.
+Run com.microservices.currencyconversionservice.CurrencyConversionServiceApplication as a Java Application.
 
 ## Containerization
 
@@ -18,11 +18,11 @@ Run com.in28minutes.microservices.currencyconversionservice.CurrencyConversionSe
 ### Running Containers
 
 ```
-docker run --publish 8100:8100 --network currency-network --env CURRENCY_EXCHANGE_URI=http://currency-exchange-service:8000 in28min/aws-currency-conversion-service:0.0.1-SNAPSHOT
+docker run --publish 8100:8100 --network currency-network --env CURRENCY_EXCHANGE_URI=http://currency-exchange-service:8000 @@@REPO_NAME@@@/aws-currency-conversion-service:0.0.1-SNAPSHOT
 ```
 
 #### Test API 
-- http://localhost:8100/api/currency-conversion-microservice/currency-converter/from/EUR/to/INR/quantity/10
+- http://localhost:8100/api/currency-conversion-microservice/currency-converter/from/EUR/to/MKD/quantity/10
 ```
 docker login
 docker push @@@REPO_NAME@@@/aws-currency-conversion-service:0.0.1-SNAPSHOT
@@ -31,17 +31,17 @@ docker push @@@REPO_NAME@@@/aws-currency-conversion-service:0.0.1-SNAPSHOT
 
 ## Resources
 
-- http://localhost:8100/api/currency-conversion-microservice/currency-converter/from/EUR/to/INR/quantity/10
+- http://localhost:8100/api/currency-conversion-microservice/currency-converter/from/EUR/to/MKD/quantity/10
 
 ```json
 {
-id: 10002,
+id: 1,
 from: "EUR",
-to: "INR",
-conversionMultiple: 75,
+to: "MKD",
+conversionMultiple: 62,
 quantity: 10,
-totalCalculatedAmount: 750,
+totalCalculatedAmount: 620,
 exchangeEnvironmentInfo: "NA",
-conversionEnvironmentInfo: "NA",
+conversionEnvironmentInfo: "NA"
 }
 ```
