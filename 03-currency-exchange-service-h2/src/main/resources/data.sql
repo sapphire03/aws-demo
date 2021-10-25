@@ -1,6 +1,16 @@
 insert into exchange_value(id,currency_from,currency_to,conversion_multiple)
-values(10001,'USD','INR',65);
+values(1,'USD','MKD',53);
 insert into exchange_value(id,currency_from,currency_to,conversion_multiple)
-values(10002,'EUR','INR',75);
+values(2,'EUR','MKD',62);
 insert into exchange_value(id,currency_from,currency_to,conversion_multiple)
-values(10003,'AUD','INR',25);
+values(3,'CHF','MKD',57);
+insert into exchange_value(id,currency_from,currency_to,conversion_multiple)
+values(4,'MXN','MKD',2.6);
+insert into exchange_value(id,currency_from,currency_to,conversion_multiple)
+values(5,'DKK','MKD',8);
+insert into exchange_value(id,currency_from,currency_to,conversion_multiple)
+values(6,'SEK','MKD',6);
+insert into exchange_value(id,currency_from,currency_to,conversion_multiple)
+values(7,'HUF','MKD',0.16);
+insert into exchange_value(id,currency_from,currency_to,conversion_multiple)
+values(8,'EGP','MKD',3.3);
